@@ -28,7 +28,7 @@ def convert():
 
     converted_amount = get_conversion(from_currency, to_currency, amount)
 
-    # Сохраняем результат конвертации в базу данных
+    # Saglabāt kovertācijas vēsturi datubāzē
     save_to_history(from_currency, to_currency, amount, converted_amount)
 
     return f"The converted amount is {converted_amount:.2f} {to_currency}"
